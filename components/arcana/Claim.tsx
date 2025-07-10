@@ -40,6 +40,12 @@ export default function Claim({ data }: { data?: ArcanaVotes }) {
                 fill="#43BBFF"
               />
             </svg>
+            <svg width="16" className="inline" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.38367 8.0166L5.09174 12.3085L6.22311 13.4399L11.6464 8.0166L6.22311 2.5933L5.09174 3.72467L9.38367 8.0166Z"
+                fill="#43BBFF"
+              />
+            </svg>
           </p>
           <div className="absolute left-0 right-0 top-2 -z-10 mx-auto h-[4px] w-[60%] animate-ping-slow bg-blue blur-sm" />
         </div>
