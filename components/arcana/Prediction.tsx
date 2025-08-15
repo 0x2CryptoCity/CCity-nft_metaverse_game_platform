@@ -40,6 +40,17 @@ export default function Prediction() {
     );
     window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + url, '_blank');
   };
+  const onShareTwitter = () => {
+    if (!address || !referralCode) return;
+    ReactGA.event({ action: 'Arcana-Info', category: 'Click', label: 'Share' });
+    const referralLink = window.location.origin + `/arcana/${address}?code=${referralCode}`;
+    const url = encodeURIComponent(referralLink);
+    const text = encodeURIComponent(
+      'Join P12 Arcana @ TI11 tune into the Great Web3 Gaming Event Featuring #Dota2\n' +
+        'Make your pick to unlock the awesome prize pool sponsored by @_p12_ & great partners!',
+    );
+    window.open('https://twitter.com/intent/tweet?text=' + text + '&url=' + url, '_blank');
+  };
 
   return (
     <div className="px-[30px] xs:px-4">
