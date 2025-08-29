@@ -10,9 +10,6 @@ function RankItem({ data, index }: { data: RewardRankItem; index: number }) {
         <div className="h-[30px] w-[30px] rounded bg-gray-600">
           {data.avatarFull && <img src={data.avatarFull} alt="avatar" />}
         </div>
-        <div className="h-[30px] w-[30px] rounded bg-gray-600">
-          {data.avatarFull && <img src={data.avatarFull} alt="avatar" />}
-        </div>
         <p className="ml-2 w-[120px] truncate text-sm font-medium 2xl:w-[200px]">{data.personName}</p>
       </div>
       <div className="basis-1/4 text-sm font-medium">{data.solvedPredictions}</div>
