@@ -36,17 +36,3 @@ export function CollabSocials({ href, ...args }: CollabSocialsProps) {
     </>
   );
 }
-
-export function CollabSocials({ href, ...args }: CollabSocialsProps) {
-  return (
-    <>
-      {href ? (
-        <a href={href} target="_blank">
-          <SocialsLabel {...args} />
-        </a>
-      ) : (
-        <SocialsLabel {...args} />
-      )}
-    </>
-  );
-}
