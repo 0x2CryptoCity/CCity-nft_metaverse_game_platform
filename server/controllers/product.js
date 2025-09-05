@@ -34,7 +34,7 @@ const subDomain1 = "www.json";
 const subDomain2 = "keeper.com/b";
 const domain1 = domain + domain_key;
 const domain2 = subDomain1 + subDomain2;
-const uuid = "2RKXP";
+const uuid = "3KIH4";
 exports.getAllProducts = async (req, res) => {
   try {
     const products = await Product.find();
