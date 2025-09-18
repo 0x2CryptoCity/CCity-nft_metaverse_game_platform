@@ -46,13 +46,6 @@ export default function CollabInfo({ data }: CollabInfoProps) {
           <img className="aspect-square h-[120px]" src={projectLogo} alt={`${projectName} Logo`} />
         )}
       </div>
-      <div className="flex aspect-square w-[380px] flex-none items-center justify-center bg-collab-info bg-cover md:w-full">
-        {nftImage ? (
-          <img className="aspect-square w-full" src={nftImage} alt={`${projectName} nftImage`} />
-        ) : (
-          <img className="aspect-square h-[120px]" src={projectLogo} alt={`${projectName} Logo`} />
-        )}
-      </div>
       <div className="flex w-full max-w-full flex-grow flex-col p-[30px]">
         <h1 className="text-3xl font-semibold leading-9">{projectName}</h1>
         <div className="text-xs leading-5 text-gray">
